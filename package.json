@@ -1,0 +1,30 @@
+{
+  "name": "learningdev",
+  "version": "1.0.0",
+  "description": "Sitio de cursos web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateocgomez/learningdev.git"
+  },
+  "keywords": [
+    "Sitio",
+    "de",
+    "web",
+    "cursos"
+  ],
+  "author": "Mateo Castagno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateocgomez/learningdev/issues"
+  },
+  "homepage": "https://github.com/mateocgomez/learningdev#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
