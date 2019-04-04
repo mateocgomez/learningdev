@@ -19,6 +19,10 @@ html {
     display: none;
 }
 
+.centrado {
+    text-align: center;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -127,6 +131,74 @@ html {
         }
         &.icono3 {
             @include background-imagen('../img/icono3.png')
+        }
+    }
+}
+
+.cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    .curso {
+        .imagen-curso {
+            width: 100%;
+        }
+        flex: 0 1 calc(50% - 1rem);
+        border: 1px solid darken($gris, 10);
+        margin-bottom: 1rem;
+        @include tablet() {
+            flex: 0 1 calc(33% - 1rem);
+        }
+        @include desktop() {
+            flex: 0 1 calc(25% - 1rem);
+        }
+    }
+    .info-curso {
+        padding: 1rem;
+        h4 {
+            margin: 0;
+            font-size: 1rem;
+        }
+    }
+    .precio {
+        display: flex;
+        justify-content: space-between;
+        .regular {
+            text-decoration: line-through;
+            color: red;
+        }
+        .oferta {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: $secundario;
+        }
+    }
+    .boton {
+        @include boton($secundario);
+    }
+}
+
+.footer {
+    border-top: 1px solid darken($gris, 10);
+    margin-top: 1rem;
+    padding-top: 2rem;
+    .contendor-footer {
+        display: flex;
+        flex-direction: column;
+        @include telefono() {
+            flex-direction: row;
+        }
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        flex: 1;
+        a {
+            color: $principal;
+            text-decoration: none;
+            margin-bottom: .5rem;
         }
     }
 }
